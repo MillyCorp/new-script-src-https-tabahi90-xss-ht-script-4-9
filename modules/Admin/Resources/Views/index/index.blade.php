@@ -52,8 +52,20 @@
                                     <td>{{getenv("HTTP_ACCEPT_LANGUAGE")}}</td>
                                   </tr>
                                   <tr>
+                                    <td>管理员邮箱</td>
+                                    <td>{{$_SERVER['SERVER_ADMIN']}}</td>
+                                  </tr>
+                                  <tr>
                                     <td>项目绝对路径</td>
                                     <td>{{$path}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>项目访问日志</td>
+                                    <td>{{$_SERVER['ERROR_LOG']}}</td>
+                                  </tr>
+                                  <tr>
+                                    <td>项目错误日志</td>
+                                    <td>{{$_SERVER['CUSTOM_LOG']}}</td>
                                   </tr>
                                 </tbody>
                               </table>
