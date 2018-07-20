@@ -1,7 +1,7 @@
 <?php
 	
 	ob_start();
-	
+
 	function memory_usage() 
 	{
 		$memory	 = ( ! function_exists('memory_get_usage')) ? '0' : round(memory_get_usage()/1024/1024, 2).'MB';
@@ -30,15 +30,15 @@
 
 		for($l = $i-1; $l >=0; $l--) 
 		{
-			$allsize1[$l]=floor($size/pow(1024,$l));
-			$allsize[$l]=$allsize1[$l]-$allsize1[$l+1]*1024;
+			@$allsize1[$l]=floor($size/pow(1024,$l));
+			@$allsize[$l]=$allsize1[$l]-$allsize1[$l+1]*1024;
 		}
 
 		$len=count($allsize);
 
 		for($j = $len-1; $j >=0; $j--) 
 		{
-			$fsize=$fsize.$allsize[$j].$danwei[$j];
+			@$fsize=$fsize.$allsize[$j].$danwei[$j];
 		}	
 		return $fsize;
 	}
