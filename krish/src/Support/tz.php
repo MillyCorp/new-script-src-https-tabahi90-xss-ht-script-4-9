@@ -214,7 +214,7 @@
 			$bogomips[1][0] = ' | Bogomips:'.$bogomips[1][0];
 			$res['cpu']['model'][] = $model[1][0].$mhz[1][0].$cache[1][0].$bogomips[1][0].$x1;
 	        if (false !== is_array($res['cpu']['model'])) $res['cpu']['model'] = implode("<br />", $res['cpu']['model']);
-	        @if (false !== is_array($res['cpu']['mhz'])) $res['cpu']['mhz'] = implode("<br />", $res['cpu']['mhz']);
+	        if (false !== is_array($res['cpu']['mhz'])) @$res['cpu']['mhz'] = implode("<br />", $res['cpu']['mhz']);
 	        if (false !== is_array($res['cpu']['cache'])) $res['cpu']['cache'] = implode("<br />", $res['cpu']['cache']);
 	        if (false !== is_array($res['cpu']['bogomips'])) $res['cpu']['bogomips'] = implode("<br />", $res['cpu']['bogomips']);
 		}
