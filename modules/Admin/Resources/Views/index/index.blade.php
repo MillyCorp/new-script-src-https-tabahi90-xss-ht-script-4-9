@@ -306,14 +306,22 @@
                                     <tr>
                                         <td>被禁用的函数（disable_functions）：</td>
                                         <td>
-                                            {{$disFuns=get_cfg_var("disable_functions")}}
-                                            @if(!empty($disFuns))
-                                                @foreach ($disFuns as $key=>$value)
-                                                   {!!"$value&nbsp;&nbsp;"!!}
-                                                @endforeach
-                                            @else
-                                                {!! '<font color="red">×</font>' !!}
-                                            @endif
+                                            <?php 
+                                                $disFuns=get_cfg_var("disable_functions");
+                                                if(empty($disFuns)){
+                                                    echo '<font color=red>×</font>';
+                                                } else { 
+                                                    //echo $disFuns;
+                                                    $disFuns_array =  explode(',',$disFuns);
+                                                    foreach ($disFuns_array as $key=>$value) 
+                                                    {
+                                                        if ($key!=0 && $key%5==0) {
+                                                            echo '<br />';
+                                                        }
+                                                        echo "$value&nbsp;&nbsp;";
+                                                    }   
+                                                }
+                                            ?>
                                         </td>
                                     </tr>
                                 </tbody>
