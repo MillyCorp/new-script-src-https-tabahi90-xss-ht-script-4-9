@@ -99,28 +99,28 @@
                                             {{-- 物理内存 --}}
                                             <p>物理内存：共{{$memory['total'] or ''}}，已用{{$memory['used'] or ''}}，空闲{{$memory['free'] or ''}}，使用率{{$memory['percent'] or ''}}%</p>
                                             <div class="layui-progress layui-progress-big" lay-showpercent="true">
-                                                <div class="layui-progress-bar layui-bg-green" lay-percent="{{$disk['percent']}}%" style="width: {{$disk['percent']}}%;">
-                                                    <span class="layui-progress-text">{{$disk['percent']}}%</span>
+                                                <div class="layui-progress-bar layui-bg-orange" lay-percent="{{$memory['percent']}}%" style="width: {{$memory['percent']}}%;">
+                                                    <span class="layui-progress-text">{{$memory['percent']}}%</span>
                                                 </div>
                                             </div>
                                             {{-- Cache化内存 --}}
                                             <p>Cache化内存为：{{$memory['cached']}}，使用率{{$memory['cachedPercent']}}%，Buffers缓冲为{{$memory['buffers']}}</p>
                                             <div class="layui-progress layui-progress-big" lay-showpercent="true">
-                                                <div class="layui-progress-bar layui-bg-green" lay-percent="{{$memory['cachedPercent']}}%" style="width: {{$memory['cachedPercent']}}%;">
+                                                <div class="layui-progress-bar layui-bg-blue" lay-percent="{{$memory['cachedPercent']}}%" style="width: {{$memory['cachedPercent']}}%;">
                                                     <span class="layui-progress-text">{{$memory['cachedPercent']}}%</span>
                                                 </div>
                                             </div>
                                             {{-- 真实内存 --}}
                                             <p>真实内存使用{{$memory['realUsed']}}，真实内存空闲{{$memory['realFree']}}，使用率{{$memory['realPercent']}}%
                                             <div class="layui-progress layui-progress-big" lay-showpercent="true">
-                                                <div class="layui-progress-bar layui-bg-green" lay-percent="{{$memory['realPercent']}}%" style="width: {{$memory['realPercent']}}%;">
+                                                <div class="layui-progress-bar layui-bg-cyan" lay-percent="{{$memory['realPercent']}}%" style="width: {{$memory['realPercent']}}%;">
                                                     <span class="layui-progress-text">{{$memory['realPercent']}}%</span>
                                                 </div>
                                             </div>
                                             {{-- SWAP区 --}}
                                             <p>SWAP区：共{{$swap['total']}}，已使用{{$swap['used']}}，空闲{{$swap['free']}}，使用率{{$swap['percent']}}%
                                             <div class="layui-progress layui-progress-big" lay-showpercent="true">
-                                                <div class="layui-progress-bar layui-bg-green" lay-percent="{{$swap['percent']}}%" style="width: {{$swap['percent']}}%;">
+                                                <div class="layui-progress-bar layui-bg-red" lay-percent="{{$swap['percent']}}%" style="width: {{$swap['percent']}}%;">
                                                     <span class="layui-progress-text">{{$swap['percent']}}%</span>
                                                 </div>
                                             </div>                                                
