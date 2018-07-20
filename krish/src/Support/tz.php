@@ -197,14 +197,14 @@
 	    if (false !== is_array($model[1]))
 		{
 	        $res['cpu']['num'] = sizeof($model[1]);
-			/*
+			
 	        for($i = 0; $i < $res['cpu']['num']; $i++)
 	        {
 	            $res['cpu']['model'][] = $model[1][$i].'&nbsp;('.$mhz[1][$i].')';
 	            $res['cpu']['mhz'][] = $mhz[1][$i];
 	            $res['cpu']['cache'][] = $cache[1][$i];
 	            $res['cpu']['bogomips'][] = $bogomips[1][$i];
-	        }*/
+	        }
 			if($res['cpu']['num']==1)
 				$x1 = '';
 			else
