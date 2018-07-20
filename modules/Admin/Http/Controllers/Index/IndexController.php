@@ -141,7 +141,7 @@ class IndexController extends AdminController
                 $net['inputSpeed'][$i] = $info[2][0];
                 $net['input'][$i] = formatsize($info[2][0]);
                 $net['out'][$i]  = formatsize($info[10][0]);
-                $inf[$i] = $inf;
+                $inf[$i] = $info;
             }
             return [$inf, $net];
         }
