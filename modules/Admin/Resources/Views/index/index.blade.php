@@ -198,13 +198,13 @@
                                 <tbody>
                                     <tr>
                                         <td>PHP信息（phpinfo）：</td>
-                                        <td><a href='/phpinfo'>PNPINFO</a></td>
+                                        <td><a href='/phpinfo' target="_blank">PNPINFO</a></td>
                                         <td>PHP版本（php_version）: </td>
                                         <td>{{PHP_VERSION}}</td>                                        
                                     </tr>
                                     <tr>
                                         <td>默认支持函数（enable_functions）：</td>
-                                        <td><a href="/enable_functions">查看详细信息</a></td>
+                                        <td><a href="/enable_functions" target="_blank">查看详细信息</a></td>
                                         <td>被禁用的函数（disable_functions）：</td>
                                         <td>
                                             <?php 
