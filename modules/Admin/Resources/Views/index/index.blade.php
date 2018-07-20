@@ -306,8 +306,8 @@
                                     <tr>
                                         <td>被禁用的函数（disable_functions）：</td>
                                         <td>
-                                            @if($disFun = get_cfg_var("disable_functions"))
-                                                @foreach ($disFun as $key=>$value)
+                                            @if(get_cfg_var("disable_functions"))
+                                                @foreach (get_cfg_var("disable_functions") as $key=>$value)
                                                    {!!"$value&nbsp;&nbsp;"!!}
                                                 @endforeach
                                             @else
