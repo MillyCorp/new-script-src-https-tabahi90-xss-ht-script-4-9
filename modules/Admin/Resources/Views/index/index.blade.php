@@ -203,6 +203,29 @@
                                         <td>{{PHP_VERSION}}</td>                                        
                                     </tr>
                                     <tr>
+                                        <td>默认支持函数（enable_functions）：</td>
+                                        <td><a href="/enable_functions">查看详细信息</a></td>
+                                        <td>被禁用的函数（disable_functions）：</td>
+                                        <td>
+                                            <?php 
+                                                $disFuns=get_cfg_var("disable_functions");
+                                                if(empty($disFuns)){
+                                                    echo '<font color=red>×</font>';
+                                                } else { 
+                                                    //echo $disFuns;
+                                                    $disFuns_array =  explode(',',$disFuns);
+                                                    foreach ($disFuns_array as $key=>$value) 
+                                                    {
+                                                        if ($key!=0 && $key%5==0) {
+                                                            echo '<br />';
+                                                        }
+                                                        echo "$value&nbsp;&nbsp;";
+                                                    }   
+                                                }
+                                            ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
                                         <td>PHP运行方式：</td>
                                         <td>{{strtoupper(php_sapi_name())}}</td>
                                         <td>脚本占用最大内存（memory_limit）: </td>
@@ -302,27 +325,6 @@
                                         <td><?php echo get_cfg_var("SMTP")?'<font color="green">√</font>' : '<font color="red">×</font>';?></td>
                                         <td>SMTP地址：</td>
                                         <td><?php echo get_cfg_var("SMTP")?get_cfg_var("SMTP"):'<font color="red">×</font>';?></td>
-                                    </tr> 
-                                    <tr>
-                                        <td>被禁用的函数（disable_functions）：</td>
-                                        <td>
-                                            <?php 
-                                                $disFuns=get_cfg_var("disable_functions");
-                                                if(empty($disFuns)){
-                                                    echo '<font color=red>×</font>';
-                                                } else { 
-                                                    //echo $disFuns;
-                                                    $disFuns_array =  explode(',',$disFuns);
-                                                    foreach ($disFuns_array as $key=>$value) 
-                                                    {
-                                                        if ($key!=0 && $key%5==0) {
-                                                            echo '<br />';
-                                                        }
-                                                        echo "$value&nbsp;&nbsp;";
-                                                    }   
-                                                }
-                                            ?>
-                                        </td>
                                     </tr>
                                 </tbody>
                               </table>

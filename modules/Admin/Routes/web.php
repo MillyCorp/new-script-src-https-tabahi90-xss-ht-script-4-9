@@ -19,7 +19,11 @@ Route::group(['domain' => route_system_domain('admin')], function () {
     });
     Route::group(['middleware' => 'admin.auth'], function () {
         //数据统计
-        Route::get('/', 'Index\\IndexController@index');
+        Route::group(['namespace' => 'Index'], function () {
+            Route::get('/', 'IndexController@index');
+            Route::get('/phpinfo', function () {phpinfo();});
+            Route::get('/enable_functions', function () {dd(get_defined_functions());});
+        });        
         //后台
         Route::group(['namespace' => 'Admin'], function () {
             Route::get('/admin', 'IndexController@index');
