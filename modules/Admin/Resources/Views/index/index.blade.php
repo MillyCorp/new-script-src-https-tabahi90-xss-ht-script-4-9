@@ -156,7 +156,7 @@
                                       <tr>
                                         <td>{{$v[1][0]}}: </td>
                                         <td>
-                                            <p>已接收：{{$net['input'][$i]}}；实时：{{$net['input'][$i]}}；已发送：{{$net['outSpeed'][$i]}}；实时：{{$net['out'][$i]}}</p>
+                                            <p>已接收：{{$net['input'][$i]}}；实时：0B/s；已发送：{{$net['out'][$i]}}；实时：0B/s</p>
                                         </td>
                                       </tr>
                                     @endforeach
