@@ -37,7 +37,7 @@
                                   </tr>
                                   <tr>
                                     <td>服务器标识</td>
-                                    <td>{{php_uname() or ''}}</td>
+                                    <td>{{php_uname()}}</td>
                                   </tr>
                                   <tr>
                                     <td>服务器主机</td>
