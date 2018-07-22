@@ -18,6 +18,16 @@
             .selected{
                 color: #5FB878;
             }
+            .block{
+                display: block;
+            }
+            .none{
+                display: none;
+            }
+            .cl{
+                margin-left: 0px;
+                margin-right: 0px;
+            }
         </style>
         @yield('style')
     </head>
@@ -33,6 +43,9 @@
                 <!-- 内容 -->
                 @yield('content')
                 <!-- 内容 - end -->
+                <!-- 右侧栏 -->
+                @include('admin::layout.lib.right')
+                <!-- 右侧栏 - end -->
             </div>
         </div>
     </body>
