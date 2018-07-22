@@ -6,6 +6,7 @@ $(function(){
 		rmenu = $('#LAY_app_right'),
 		admin = $("#LAY_app_admin"),
 		adminInfo = $("#LAY_app_admin_info"),
+		item = $(".layui-nav-itemed"),
 		right = "layui-icon-shrink-right",
       	left = "layui-icon-spread-left",
       	m = "layui-side-menu",
@@ -13,19 +14,15 @@ $(function(){
       	sm = "layadmin-side-spread-sm";
 
 	var w = screen();
-	w < 2 ? (menu.css("display", ""), header.css("display", "none")) : '';
+	w < 3 ? (menu.css("display", ""), header.css("display", "none")) : '';
 	w < 2 ? (flex.removeClass(right).addClass(left)) : (flex.removeClass(left).addClass(right));
 
     $(window).resize(function(){
     	var w = screen();
-    	console.log(w)
-    	w < 2 ? (menu.css("display", ""), header.css("display", "none")) : (menu.css("display", "none"), header.css("display", ""));
+    	w < 3 ? (menu.css("display", ""), header.css("display", "none")) : (menu.css("display", "none"), header.css("display", ""), rmenu.removeClass('layui-show'));
     	w < 2 ? (flex.removeClass(right).addClass(left)) : (flex.removeClass(left).addClass(right));
 
 	})
-
-
-
 
 	flex.on('click', function(){
         if (flex.hasClass(right)) {
@@ -51,8 +48,14 @@ $(function(){
         }
     })
 
+    item.on('click', function(){
+    	if(body.hasClass(g)){
+    		flex.removeClass(left).addClass(right)
+    		body.removeClass(g)
+    	}
+    })
+
 	var sideFlexible = function(e) {
-	    var w = screen();
 	    "spread" == e ? (body.addClass(g), flex.removeClass(right).addClass(left), w < 2 ? (body.removeClass(sm).removeClass(g) ) :'') : (body.removeClass(g), flex.removeClass(left).addClass(right), w < 2 ? (body.addClass(sm)) :'');
 	}
 })

@@ -71,16 +71,16 @@
                 <dd>
                     <a lay-href="set/user/password">修改密码</a></dd>
                 <hr>
-                <dd layadmin-event="logout" style="text-align: center;">
-                    <a>退出</a>
+                <dd style="text-align: center;">
+                    <a href="/passport/logout">退出</a>
                 </dd>
             </dl>
         </li>
-     {{--    <li class="layui-nav-item" lay-unselect="">
+        <li class="layui-nav-item" lay-unselect="">
             <a href="javascript:;" layadmin-event="more">
                 <i class="layui-icon layui-icon-more-vertical"></i>
             </a>
-        </li> --}}
+        </li>
         <span class="layui-nav-bar" style="left: 0px; top: 48px; width: 0px; opacity: 0;"></span>
     </ul>
 </div>

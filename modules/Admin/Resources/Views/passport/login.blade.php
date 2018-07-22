@@ -63,5 +63,12 @@
                 tips(data);
             },'json');
         });
+
+        //
+        layer.msg('测试中，账号密码可随意输入' ,{
+            offset: '15px',
+            icon: 6,
+            time: 3000
+        })
     }();
 </script>

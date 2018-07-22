@@ -12,7 +12,7 @@
 */
 
 Route::group(['domain' => route_system_domain('www')], function () {
-    Route::get('/', function () {
-        dd('This is the Www module index page. Build something great!');
+	Route::group(['namespace' => 'Index'], function () {
+    	Route::get('/', 'IndexController@index');
     });
 });

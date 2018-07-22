@@ -27,8 +27,14 @@ class PassportController extends AdminController
             $data = $request->get('data');
             Session::put('admin.user', '1');
             Session::save();
-            return $this->success('登录成功', '/admin');
+            return $this->success('登录成功', '/');
         }
+        return view('admin::passport.login');
+    }
+
+    public function logout()
+    {
+        Session::forget('admin.user');
         return view('admin::passport.login');
     }
 }

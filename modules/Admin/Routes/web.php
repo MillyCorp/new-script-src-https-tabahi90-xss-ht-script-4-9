@@ -15,7 +15,7 @@ Route::group(['domain' => route_system_domain('admin')], function () {
     //登录、退出
     Route::group(['namespace' => 'Passport', 'prefix' => 'passport', 'as' => 'passport.'], function () {
         Route::match(['get', 'post'], 'login', ['as' => 'Login', 'uses' => 'PassportController@login']);
-        Route::get('logout', ['as' => 'Login', 'uses' => 'PassportController@logout']);
+        Route::get('logout', ['as' => 'Logout', 'uses' => 'PassportController@logout']);
     });
     Route::group(['middleware' => 'admin.auth'], function () {
         //数据统计
