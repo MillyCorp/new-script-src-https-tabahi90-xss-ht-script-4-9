@@ -1,96 +1,53 @@
-	<div class="none layui-layer layui-layer-page layui-anim layui-anim-rl layui-layer-adminRight" id="LAY_app_right" type="page" times="6" showtime="0" contype="string" style="z-index: 19891020; width: 100px; top: 25.5px; left: unset; right : 0px">
+	<div class="none layui-layer layui-layer-page layui-anim layui-anim-rl layui-layer-adminRight" id="LAY_app_right" type="page" times="6" showtime="0" contype="string" style="z-index: 19891020; width: 100px; top: 25.5px; left: unset; right : 0px; background-color: #393D49;">
     <div id="LAY_adminPopupTheme" class="layui-layer-content">
-        <div class="layui-card-header">菜单</div>
         <div class="layui-card-body layadmin-setTheme">
-            <ul class="layadmin-setTheme-color">
-                <li layadmin-event="setTheme" data-index="0" data-alias="default" class="layui-this" title="default">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #20222A;">
-                        <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="1" data-alias="dark-blue" title="dark-blue">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #03152A;">
-                        <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="2" data-alias="coffee" title="coffee">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #2E241B;">
-                        <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="3" data-alias="purple-red" title="purple-red">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #50314F;">
-                        <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="4" data-alias="ocean" title="ocean">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #344058;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #1E9FFF;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="5" data-alias="green" title="green">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #3A3D49;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #2F9688;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="6" data-alias="red" title="red">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #20222A;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #F78400;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="7" data-alias="fashion-red" title="fashion-red">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #28333E;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #AA3130;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="8" data-alias="classic-black" title="classic-black">
-                    <div class="layadmin-setTheme-header" style="background-color: undefined;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #24262F;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #3A3D49;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="9" data-alias="green-header" title="green-header">
-                    <div class="layadmin-setTheme-header" style="background-color: #2F9688;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: undefined;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #226A62;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="10" data-alias="ocean-header" title="ocean-header">
-                    <div class="layadmin-setTheme-header" style="background-color: #1E9FFF;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: #344058;">
-                        <div class="layadmin-setTheme-logo" style="background-color: #0085E8;"></div>
-                    </div>
-                </li>
-                <li layadmin-event="setTheme" data-index="11" data-alias="classic-black-header" title="classic-black-header">
-                    <div class="layadmin-setTheme-header" style="background-color: #393D49;"></div>
-                    <div class="layadmin-setTheme-side" style="background-color: undefined;">
-                        <div class="layadmin-setTheme-logo" style="background-color: undefined;"></div>
-                    </div>
-                </li>
+            <ul >
+		        <li class="padfix">
+		            <a href="/" layadmin-event="flexible" title="服务器">
+		                <i class="layui-icon layui-icon-util @if(\Request::is('/')) selected @endif" > </i>
+		            </a>
+		        </li>
+		        <li class="padfix">
+		            <a href="/www" layadmin-event="flexible" title="主页">
+		                <i class="layui-icon layui-icon-home @if(\Request::is('www*')) selected @endif" > 主页</i>
+		            </a>
+		        </li>
+		        <li class="padfix">
+		            <a href="/blog" layadmin-event="flexible" title="博客">
+		                <i class="layui-icon layui-icon-survey @if(\Request::is('blog*')) selected @endif" > 博客</i>
+		            </a>
+		        </li>
+		        <li class="padfix">
+		            <a href="/book" layadmin-event="flexible" title="书城">
+		                <i class="layui-icon layui-icon-read @if(\Request::is('book*')) selected @endif" > 书城</i>
+		            </a>
+		        </li>
+				<li class="padfix">
+		            <a href="/mall" layadmin-event="flexible" title="商城">
+		                <i class="layui-icon layui-icon-cart @if(\Request::is('mall*')) selected @endif" > 商城</i>
+		            </a>
+		        </li>
+		        <li class="padfix">
+		            <a href="/bbs" layadmin-event="flexible" title="论坛">
+		                <i class="layui-icon layui-icon-chat @if(\Request::is('bbs*')) selected @endif" > 论坛</i>
+		            </a>
+		        </li>
+				<li class="padfix">
+		            <a href="/wechat" layadmin-event="flexible" title="公众号">
+		                <i class="layui-icon layui-icon-login-wechat @if(\Request::is('wechat*')) selected @endif" > 公众号</i>
+		            </a>
+		        </li>
+		        <li class="padfix">
+		            <a href="/ims" layadmin-event="flexible" title="进销存">
+		                <i class="layui-icon layui-icon-release @if(\Request::is('ims*')) selected @endif" > 进销存</i>
+		            </a>
+		        </li>
+		        <li class="padfix">
+		            <a href="/admin" layadmin-event="flexible" title="设置">
+		                <i class="layui-icon layui-icon-set-fill @if(\Request::is('admin*')) selected @endif" > 设置</i>
+		            </a>
+		        </li>
             </ul>
         </div>
-        <script>
-                $(function() {
-
-                    //监听隐藏开关
-                    // form.on('switch(system-theme-sideicon)',
-                    // function() {
-                    //     admin.theme({
-                    //         hideSideIcon: this.checked
-                    //     })
-                    // });
-
-            });
-            </script>
     </div>
-    <span class="layui-layer-setwin"></span>
-    <span class="layui-layer-resize"></span>
-</div>
+</div

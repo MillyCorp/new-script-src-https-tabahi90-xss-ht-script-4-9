@@ -24,9 +24,12 @@
             .none{
                 display: none;
             }
-            .cl{
-                margin-left: 0px;
-                margin-right: 0px;
+            #LAY_app_right a {
+                color: #f8f8f8;
+            }
+            .padfix{
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         </style>
         @yield('style')
