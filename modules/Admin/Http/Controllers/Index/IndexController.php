@@ -2,7 +2,8 @@
 
 namespace Modules\Admin\Http\Controllers\Index;
 
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
+// use Illuminate\Support\Facades\Request;
 use Modules\Admin\Http\Controllers\AdminController;
 
 class IndexController extends AdminController

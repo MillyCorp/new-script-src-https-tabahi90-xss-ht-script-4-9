@@ -1,9 +1,8 @@
 <div class="layui-header" style="background-color: #393D49;">
-    @include('admin::layout.lib.logo')
     <ul class="layui-nav layui-layout-left layui-layout-right">
         <li class="layui-nav-item layadmin-flexible" lay-unselect="">
-            <a href="/" layadmin-event="flexible" title="探针">
-                <i class="layui-icon layui-icon-chart-screen @if(\Request::is('/')) selected @endif" id="LAY_app_flexible"></i>
+            <a href="javascript:;" layadmin-event="flexible" title="探针">
+                <i id="LAY_app_flexible" class="layui-icon layui-icon-shrink-right @if(\Request::is('/')) selected @endif" id="LAY_app_flexible"></i>
             </a>
         </li>
         <li class="layui-nav-item layadmin-flexible" lay-unselect="">

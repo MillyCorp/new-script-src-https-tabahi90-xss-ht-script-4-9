@@ -8,8 +8,9 @@
         <link rel="stylesheet" href="/layui/css/layui.css"/>
         <link rel="stylesheet" href="/adminStatic/css/admin.css"/>
         <script src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/helpers.js"></script> 
         <script type="text/javascript" src="/layui/layui.all.js"></script>
+        <script type="text/javascript" src="/js/helpers.js"></script> 
+        <script type="text/javascript" src="/adminStatic/js/admin.js"></script> 
         <style type="text/css">
             .layui-layout-admin .layui-header a, .layui-layout-admin .layui-header a cite {
                 color: #f8f8f8;
@@ -36,4 +37,5 @@
         </div>
     </body>
 </html>
+@yield('js')
        
