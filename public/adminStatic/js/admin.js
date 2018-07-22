@@ -11,13 +11,13 @@ $(function(){
       	sm = "layadmin-side-spread-sm";
 
 	var w = screen();
-	w < 1 ? (menu.css("display", ""), header.css("display", "none")) : '';
+	w < 2 ? (menu.css("display", ""), header.css("display", "none")) : '';
 	w < 2 ? (flex.removeClass(right).addClass(left)) : (flex.removeClass(left).addClass(right));
 
     $(window).resize(function(){
     	var w = screen();
     	console.log(w)
-    	w < 1 ? (menu.css("display", ""), header.css("display", "none")) : (menu.css("display", "none"), header.css("display", ""));
+    	w < 2 ? (menu.css("display", ""), header.css("display", "none")) : (menu.css("display", "none"), header.css("display", ""));
     	w < 2 ? (flex.removeClass(right).addClass(left)) : (flex.removeClass(left).addClass(right));
 
 	})
