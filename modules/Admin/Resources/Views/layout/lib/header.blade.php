@@ -51,21 +51,21 @@
             <a href="/admin" layadmin-event="flexible" title="设置">
                 <i class="layui-icon layui-icon-set-fill @if(\Request::is('admin*')) selected @endif" > 设置</i>
             </a>
-        </li>
-        <li class="layui-nav-item layadmin-flexible" lay-unselect="" style="display: none" id="LAY_app_menu">
-            <a href="javascript:;" layadmin-event="flexible" title="菜单">
-                <i class="layui-icon layui-icon-template-1" > 菜单</i>
-            </a>
         </li>                        
         <span class="layui-nav-bar" style="left: 206px; top: 48px; width: 0px; opacity: 0;"></span>
     </ul>
     <ul class="layui-nav layui-layout-right" lay-filter="layadmin-layout-right">
-        <li class="layui-nav-item" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible" lay-unselect="" style="display: none" id="LAY_app_menu">
+            <a href="javascript:;" layadmin-event="flexible" title="菜单">
+                <i class="layui-icon layui-icon-template-1" > 菜单</i>
+            </a>
+        </li>
+        <li class="layui-nav-item" lay-unselect="" id="LAY_app_admin">
             <a href="javascript:;">
                 <cite>admin</cite>
                 <span class="layui-nav-more"></span>
             </a>
-            <dl class="layui-nav-child layui-anim layui-anim-upbit">
+            <dl class="layui-nav-child layui-anim layui-anim-upbit" id="LAY_app_admin_info">
                 <dd>
                     <a lay-href="set/user/info">基本资料</a></dd>
                 <dd>
@@ -76,6 +76,11 @@
                 </dd>
             </dl>
         </li>
+     {{--    <li class="layui-nav-item" lay-unselect="">
+            <a href="javascript:;" layadmin-event="more">
+                <i class="layui-icon layui-icon-more-vertical"></i>
+            </a>
+        </li> --}}
         <span class="layui-nav-bar" style="left: 0px; top: 48px; width: 0px; opacity: 0;"></span>
     </ul>
 </div>

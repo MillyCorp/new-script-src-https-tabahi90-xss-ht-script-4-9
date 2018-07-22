@@ -4,6 +4,8 @@ $(function(){
 		menu = $("#LAY_app_menu"),
 		header = $(".layui-icon-header-menu"),
 		rmenu = $('#LAY_app_right'),
+		admin = $("#LAY_app_admin"),
+		adminInfo = $("#LAY_app_admin_info"),
 		right = "layui-icon-shrink-right",
       	left = "layui-icon-spread-left",
       	m = "layui-side-menu",
@@ -22,6 +24,9 @@ $(function(){
 
 	})
 
+
+
+
 	flex.on('click', function(){
         if (flex.hasClass(right)) {
         	sideFlexible("spread");
@@ -31,13 +36,20 @@ $(function(){
     })
 
 	menu.on('click', function(){
-		if (rmenu.hasClass("none")) {
-        	rmenu.removeClass('none');
+		if (rmenu.hasClass("layui-show")) {
+        	rmenu.removeClass('layui-show');
         } else {
-        	rmenu.addClass('none');
+        	rmenu.addClass('layui-show');
         }
     })
 
+	admin.on('click', function(){
+		if (adminInfo.hasClass("layui-show")) {
+        	adminInfo.removeClass('layui-show');
+        } else {
+        	adminInfo.addClass('layui-show');
+        }
+    })
 
 	var sideFlexible = function(e) {
 	    var w = screen();
