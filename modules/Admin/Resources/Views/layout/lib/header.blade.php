@@ -72,7 +72,7 @@
             </dl>
         </li>
         <li class="layui-nav-item" lay-unselect="">
-            <a href="javascript:;" layadmin-event="more">
+            <a href="/tz" title="探针">
                 <i class="layui-icon layui-icon-more-vertical"></i>
             </a>
         </li>
