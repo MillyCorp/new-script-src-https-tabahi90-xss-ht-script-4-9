@@ -40,7 +40,15 @@
                     <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
                     <span><a href="http://book.crazy9115.com/" target="_blank">书城</a></span>
                     <span><a href="http://mall.crazy9115.com/" target="_blank">商城</a></span>
-                    <span><a href="http://wechat.crazy9115.com/" target="_blank">微信公众号</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
+                    <span><a href="http://wechat.crazy9115.com/" target="_blank">公众号</a></span>
                 </p>
             </div>
         </div>

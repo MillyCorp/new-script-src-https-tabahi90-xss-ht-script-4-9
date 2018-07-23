@@ -7,11 +7,6 @@
                 </a>
             </li>
         @endif
-        <li class="layui-nav-item layadmin-flexible" lay-unselect="">
-            <a href="/" layadmin-event="flexible" title="服务器">
-                <i class="layui-icon layui-icon-util @if(\Request::is('/')) selected @endif" ></i>
-            </a>
-        </li>
         <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
             <a href="/www" layadmin-event="flexible" title="主页">
                 <i class="layui-icon layui-icon-home @if(\Request::is('www*')) selected @endif" > 主页</i>

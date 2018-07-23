@@ -30,8 +30,7 @@
             "Modules\\": "modules/"
         },
         "files":[
-            "krish/src/Support/helpers.php",
-            "krish/src/Support/tz.php"
+            "krish/src/Support/helpers.php"
         ]
     },
     "autoload-dev": {

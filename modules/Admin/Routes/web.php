@@ -18,12 +18,9 @@ Route::group(['domain' => route_system_domain('admin')], function () {
         Route::get('logout', ['as' => 'Logout', 'uses' => 'PassportController@logout']);
     });
     Route::group(['middleware' => 'admin.auth'], function () {
-        //数据统计
-        Route::group(['namespace' => 'Index'], function () {
-            Route::get('/', 'IndexController@index');
-            Route::get('/phpinfo', function () {phpinfo();});
-            Route::get('/enable_functions', function () {dd(get_defined_functions());});
-        });        
+        Route::get('/', function () {return redirect('/admin');});
+        Route::get('/tz', function () {return view('admin::layout.tool.tz');});
+        Route::get('/phpinfo', function () {phpinfo();});
         //后台
         Route::group(['namespace' => 'Admin'], function () {
             Route::get('/admin', 'IndexController@index');
