@@ -37,18 +37,9 @@
             <div class="layui-trans layadmin-user-login-footer">
                 <p>© 2018<a href="http://www.crazy9115.com/" target="_blank">crazy9115.com</a></p>
                 <p>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://book.crazy9115.com/" target="_blank">书城</a></span>
-                    <span><a href="http://mall.crazy9115.com/" target="_blank">商城</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://blog.crazy9115.com/" target="_blank">博客</a></span>
-                    <span><a href="http://wechat.crazy9115.com/" target="_blank">公众号</a></span>
+                    @foreach(config('url') as $url)
+                        <span><a href="{{$url['url']}}" target="_blank">{{$url['name']}}</a></span>
+                    @endforeach
                 </p>
             </div>
         </div>

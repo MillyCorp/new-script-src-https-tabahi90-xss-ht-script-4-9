@@ -41,42 +41,6 @@ class Controller extends BaseController
     }
 
     /**
-     * 操作询问跳转的快捷方法
-     * @access protected
-     * @param string $message 提示信息
-     * @param string $jumpUrl 页面跳转地址
-     * @return void
-     */
-    protected function question($message = '', $jumpUrl = '')
-    {
-        return $this->dispatchJump(3, $message, $jumpUrl);
-    }
-
-    /**
-     * 操作锁定跳转的快捷方法
-     * @access protected
-     * @param string $message 提示信息
-     * @param string $jumpUrl 页面跳转地址
-     * @return void
-     */
-    protected function lock($message = '', $jumpUrl = '')
-    {
-        return $this->dispatchJump(4, $message, $jumpUrl);
-    }
-
-    /**
-     * 操作成功跳转的快捷方法
-     * @access protected
-     * @param string $message 提示信息
-     * @param string $jumpUrl 页面跳转地址
-     * @return void
-     */
-    protected function welcome($message = '', $jumpUrl = '')
-    {
-        return $this->dispatchJump(6, $message, $jumpUrl);
-    }
-
-    /**
      * 操作成功跳转的快捷方法
      * @access protected
      * @param string $message 提示信息

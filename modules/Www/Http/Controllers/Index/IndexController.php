@@ -15,6 +15,6 @@ class IndexController extends WwwController
 
     public function index(Request $request)
     {
-        return view('www::index.index');
+        return view('welcome');
     }
 }

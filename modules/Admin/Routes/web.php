@@ -22,7 +22,7 @@ Route::group(['domain' => route_system_domain('admin')], function () {
         Route::get('/', function () {return redirect('/admin');});
 
         //雅黑探针
-        Route::get('/tz', function () {return view('admin::layout.tool.tz');});
+        Route::any('/tz', function () {return view('admin::layout.tool.tz');});
 
         //后台
         Route::group(['namespace' => 'Admin'], function () {

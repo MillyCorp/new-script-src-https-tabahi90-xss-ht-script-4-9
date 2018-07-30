@@ -7,9 +7,7 @@ if (!function_exists('route_system_domain')) {
     function route_system_domain($prefix = null)
     {
         $url = config('app.url');
-        $url = rtrim($url, '/');
-        $domain = array_slice(explode('.', $url), 1);
-        return $prefix . '.' . implode('.', $domain);
+        return $prefix . '.' . $url;
     }
 }
 

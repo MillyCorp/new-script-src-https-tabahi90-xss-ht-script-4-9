@@ -53,7 +53,6 @@ return [
     */
 
     'url' => env('APP_URL', 'http://localhost'),
-    'admin_url' => 'http://admin.crazy9115.com/',
 
     /*
     |--------------------------------------------------------------------------
