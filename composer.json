@@ -27,10 +27,11 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Modules\\": "modules/"
+            "Modules\\": "modules/",
+            "Crazy9115\\": "crazy9115/framework/src/Class/"
         },
         "files":[
-            "krish/src/Support/helpers.php"
+            "crazy9115/framework/src/Helpers/helpers.php"
         ]
     },
     "autoload-dev": {

@@ -3,8 +3,8 @@
 namespace Modules\Www\Http\Controllers\Index;
 
 use Illuminate\Http\Request;
-// use Illuminate\Support\Facades\Request;
 use Modules\Www\Http\Controllers\WwwController;
+use Crazy9115\Open51094;
 
 class IndexController extends WwwController
 {
@@ -15,6 +15,14 @@ class IndexController extends WwwController
 
     public function index(Request $request)
     {
-        return view('welcome');
+    	if($request->get('code')) {
+			$open = new Open51094();
+			$code = $_GET['code'];
+			$inf = $open->me($code);
+			dump($inf);	
+    	}
+    	dump(cuid(2));
+    	dump(guid());
+        return view('www::index.index');
     }
 }
