@@ -19,10 +19,9 @@ class IndexController extends WwwController
 			$open = new Open51094();
 			$code = $_GET['code'];
 			$inf = $open->me($code);
+            dump($code);
 			dump($inf);	
     	}
-    	dump(cuid(2));
-    	dump(guid());
         return view('www::index.index');
     }
 }
