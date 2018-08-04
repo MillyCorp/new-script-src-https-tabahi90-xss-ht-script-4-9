@@ -18,11 +18,12 @@ Route::group(['domain' => route_system_domain('admin')], function () {
         Route::get('logout', ['as' => 'Logout', 'uses' => 'PassportController@logout']);
     });
     Route::group(['middleware' => 'admin.auth'], function () {
+        
         //主页跳转
         Route::get('/', function () {return redirect('/admin');});
 
         //雅黑探针
-        Route::any('/tz', function () {return view('admin::layout.tool.tz');});
+        Route::any('/tz', function () {return view('admin::layout.lib.tool.tz');});
 
         //后台
         Route::group(['namespace' => 'Admin'], function () {

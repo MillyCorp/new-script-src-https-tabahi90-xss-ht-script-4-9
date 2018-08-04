@@ -774,7 +774,7 @@ function displayData(dataJSON)
 <body>
 <div id="page">
 <div id="header">
-    <h1><a href="tz.php"><?php echo $title;?></a></h1>
+    <h1><a href="/">首页</a>><a href="/tz"><?php echo $title;?></a></h1>
 </div>
 
 <!--服务器相关参数-->
@@ -1443,7 +1443,7 @@ else
 <a id="bottom"></a>
 
 <div id="footer">
-&copy; <?php echo date("Y",time());?> <A HREF="http://www.Yahei.Net" target="_blank"><?php echo $title.$version;?></A> All Rights Reserved.<br />
+&copy; <?php echo date("Y",time());?><?php echo $title.$version;?> All Rights Reserved.<br />
 <?php $run_time = sprintf('%0.4f', microtime_float() - $time_start);?>
 Processed in <?php echo $run_time?> seconds. <?php echo memory_usage();?> memory usage.<br /><u style="float: right; margin-top: -15px;"><a href="#header"><h2> Top↑</h2></a></u>
 

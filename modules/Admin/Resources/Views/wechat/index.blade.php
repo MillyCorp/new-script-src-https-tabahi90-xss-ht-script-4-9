@@ -3,7 +3,7 @@
 
 @stop
 @section('left')
-	@include('admin::layout.left.wechat')
+	@include('admin::layout.lib.left.wechat')
 @stop
 @section('content')
 <div class="layui-body" id="LAY_app_body">

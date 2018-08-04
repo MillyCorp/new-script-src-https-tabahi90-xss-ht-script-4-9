@@ -3,11 +3,6 @@
         <div class="layui-card-body layadmin-setTheme">
             <ul >
 		        <li class="padfix">
-		            <a href="/" layadmin-event="flexible" title="服务器">
-		                <i class="layui-icon layui-icon-util @if(\Request::is('/')) selected @endif" > </i>
-		            </a>
-		        </li>
-		        <li class="padfix">
 		            <a href="/www" layadmin-event="flexible" title="主页">
 		                <i class="layui-icon layui-icon-home @if(\Request::is('www*')) selected @endif" > 主页</i>
 		            </a>

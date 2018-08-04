@@ -6,10 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
         <link rel="stylesheet" href="/layui/css/layui.css"/>
-        <link rel="stylesheet" href="/adminStatic/css/admin.css"/>
-        <link rel="stylesheet" href="/adminStatic/css/login.css"/>
+        <link rel="stylesheet" href="/modules/admin/css/admin.css"/>
+        <link rel="stylesheet" href="/modules/admin/css/login.css"/>
         <script src="https://cdn.staticfile.org/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/js/helpers.js"></script> 
+        <script type="text/javascript" src="/static/js/helpers.js"></script> 
         <script type="text/javascript" src="/layui/layui.all.js"></script>   
     </head>
     <body layadmin-themealias="default" class="layui-layout-body">
@@ -43,7 +43,7 @@
                 </p>
             </div>
         </div>
-        <script type="text/javascript" color="0,104,183" opacity="1" zindex="-1" count="100" src="/adminStatic/js/jquery_canvas.js"></script>
+        <script type="text/javascript" color="0,104,183" opacity="1" zindex="-1" count="100" src="/modules/admin/js/jquery_canvas.js"></script>
         <canvas style="position: fixed; top: 0px; left: 0px; z-index: -1; opacity: 1;"></canvas>
     </body>
 </html>

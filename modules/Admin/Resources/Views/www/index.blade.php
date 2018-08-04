@@ -3,7 +3,7 @@
 
 @stop
 @section('left')
-	@include('admin::layout.left.www')
+	@include('admin::layout.lib.left.www')
 @stop
 @section('content')
 <div class="layui-body" id="LAY_app_body">

@@ -7,42 +7,42 @@
                 </a>
             </li>
         @endif
-        <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/www" layadmin-event="flexible" title="主页">
                 <i class="layui-icon layui-icon-home @if(\Request::is('www*')) selected @endif" > 主页</i>
             </a>
         </li>
-        <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/blog" layadmin-event="flexible" title="博客">
                 <i class="layui-icon layui-icon-survey @if(\Request::is('blog*')) selected @endif" > 博客</i>
             </a>
         </li>
-        <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/book" layadmin-event="flexible" title="书城">
                 <i class="layui-icon layui-icon-read @if(\Request::is('book*')) selected @endif" > 书城</i>
             </a>
         </li>
-		<li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+		<li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/mall" layadmin-event="flexible" title="商城">
                 <i class="layui-icon layui-icon-cart @if(\Request::is('mall*')) selected @endif" > 商城</i>
             </a>
         </li>
-        <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/bbs" layadmin-event="flexible" title="论坛">
                 <i class="layui-icon layui-icon-chat @if(\Request::is('bbs*')) selected @endif" > 论坛</i>
             </a>
         </li>
-		<li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+		<li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/wechat" layadmin-event="flexible" title="公众号">
                 <i class="layui-icon layui-icon-login-wechat @if(\Request::is('wechat*')) selected @endif" > 公众号</i>
             </a>
         </li>
-        <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/ims" layadmin-event="flexible" title="进销存">
                 <i class="layui-icon layui-icon-release @if(\Request::is('ims*')) selected @endif" > 进销存</i>
             </a>
         </li>
-        <li class="layui-nav-item layadmin-flexible layui-icon-header-menu" lay-unselect="">
+        <li class="layui-nav-item layadmin-flexible LAY_app_header" lay-unselect="">
             <a href="/admin" layadmin-event="flexible" title="设置">
                 <i class="layui-icon layui-icon-set-fill @if(\Request::is('admin*')) selected @endif" > 设置</i>
             </a>
