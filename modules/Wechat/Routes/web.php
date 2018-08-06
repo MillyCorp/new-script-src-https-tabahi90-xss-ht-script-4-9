@@ -13,7 +13,7 @@
 
 Route::group(['domain' => route_system_domain('wechat')], function () {
     Route::group(['prefix' => 'test', 'namespace' => 'Test'], function () {
-        Route::get('valid', 'check\\CheckController@valid');
+        Route::get('valid', 'Check\\CheckController@valid');
     });
     Route::group(['namespace' => 'pro'], function () {
         
