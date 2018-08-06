@@ -12,7 +12,10 @@
 */
 
 Route::group(['domain' => route_system_domain('wechat')], function () {
-    Route::get('/', function () {
-        dd('This is the Wechat module index page. Build something great!');
+    Route::group(['prefix' => 'test', 'namespace' => 'Test'], function () {
+        Route::get('valid', 'check\\CheckController@valid');
+    });
+    Route::group(['namespace' => 'pro'], function () {
+        
     });
 });
