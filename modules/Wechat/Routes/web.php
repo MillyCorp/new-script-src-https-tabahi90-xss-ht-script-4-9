@@ -11,7 +11,7 @@
 |
 */
 
-Route::group(['prefix' => 'wechat'], function () {
+Route::group(['domain' => route_system_domain('wechat')], function () {
     Route::get('/', function () {
         dd('This is the Wechat module index page. Build something great!');
     });
